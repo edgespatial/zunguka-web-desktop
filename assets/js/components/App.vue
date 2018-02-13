@@ -117,7 +117,6 @@ export default {
 
             let freePages = ['home']; // pages without a list 
             let listPages = ['buildings', 'schools']; // pages with a list 
-            
             // new page has a list
             if (listPages.find(p => p === page) !== undefined) {
                 // close all others 

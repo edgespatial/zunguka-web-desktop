@@ -1,0 +1,108 @@
+color1 = #0d3b66
+color2 = #faf0ca
+color3 = #f4d35e
+color4 = #ee964b
+redOrange = #f26c15
+
+@font-face {
+    font-family: 'Avenir'
+    src: url('../fonts/AvenirNextLTPro-Regular.otf') format('opentype')
+}
+
+* {
+    font-family: 'Avenir'
+}
+
+/* Bootstrap modifications */
+.btn,
+.form-control,
+.nav-item .nav-link
+    border-radius 0
+
+/* Utilities */
+for size in (1..20)
+    .p-{size*10}
+        padding (size*10)px !important
+    .pt-{size*10}
+        padding-top (size*10)px !important
+    .pb-{size*10}
+        padding-bottom (size*10)px !important
+    .pl-{size*10}
+        padding-left (size*10)px !important
+    .pr-{size*10}
+        padding-right (size*10)px !important
+
+for size in (1..10)
+    .h-{size*10}
+        height (size*10)% !important
+
+html, body
+    height 100%
+    min-height  730px
+    min-width 1000px
+
+.controls
+    background-color #eee
+    overflow-y hidden
+    border-right 1px solid #eee
+    .profile  img
+        width 90px
+        border-radius 25%
+        
+    color #000
+    .logo
+        width 100%
+        img
+            width 100%
+    ul > li
+        text-align center
+        border-left 5px solid #eee
+        list-style none
+        font-size 14px
+        padding 20px 10px 20px 10px
+        margin 0
+        transition all .2s
+    
+    ul > li.active, ul > li:hover
+        border-left 8px solid redOrange
+        background-color color2
+        color black 
+        cursor pointer
+    ul > li > a
+        text-decoration none
+        color #666
+        i
+            display block
+            font-size 30px
+
+.list
+    overflow-y hidden
+    display none
+    z-index 10
+    border-right 1px solid #eee
+    box-shadow 5px -4px 10px 0 rgba(0, 0, 0, 0.2)
+    .items
+        margin-top 60px
+        height calc(100vh - 60px)
+        overflow-y scroll
+
+    .search
+        height 60px        
+        border 1px solid #eee
+        position absolute
+        z-index 20
+    .item
+        cursor pointer
+        transition all 0.3s
+        border-left 5px solid white
+        border-bottom 1px solid #eee
+    .item.active, .item:hover
+        background-color color2
+        border-left 8px solid color4
+    img
+        width 95px
+    .name
+        font-size 13px
+    .content
+        font-size 12px
+        

@@ -412,13 +412,13 @@ body {
   cursor: pointer;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  border-left: 5px solid #fff;
+  border-left: 2px solid #fff;
   border-bottom: 1px solid #eee;
 }
 .list .item.active,
 .list .item:hover {
   background-color: #faf0ca;
-  border-left: 8px solid #ee964b;
+  border-left: 5px solid #ee964b;
 }
 .list img {
   width: 95px;

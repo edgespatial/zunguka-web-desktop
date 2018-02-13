@@ -15,7 +15,7 @@ let mix = require('laravel-mix');
     .js('assets/js/app.js', 'public/js')
     .sass('assets/sass/app.scss', 'public/css/sass.css')
     .stylus('assets/stylus/app.styl', 'public/css/stylus.css')
-    .styles([ 'public/css/sass.css', 'public/css/stylus.css' ], 'public/css/app.css')
+    .styles([ 'assets/css/app.css', 'public/css/sass.css', 'public/css/stylus.css' ], 'public/css/app.css')
     .copyDirectory('assets/img', 'public/img')
     .copyDirectory('assets/fonts', 'public/fonts');
 

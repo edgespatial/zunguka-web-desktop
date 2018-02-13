@@ -43,10 +43,12 @@ export default {
             const vm = this;
             try {
                 vm.marker.remove();
-            } catch (e) { }
-            vm.marker = new mapboxgl.Marker()
-                .setLngLat(vm.activeMarker)
-                .addTo(vm.map);
+            } catch (e) {  }
+            try {
+                vm.marker = new mapboxgl.Marker()
+                    .setLngLat(vm.activeMarker)
+                    .addTo(vm.map);
+            } catch (e) {  }
         },
     },
     methods: {
